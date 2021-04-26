@@ -10,8 +10,9 @@
     >
       <div class="title-container">
         <h3 class="title">
-          Login Form
+            Login Form
         </h3>
+        <lang-select class="set-language" />
       </div>
 
       <el-form-item prop="username">
@@ -76,6 +77,7 @@ import { Dictionary } from 'vue-router/types/router'
 import { Form as ElForm, Input } from 'element-ui'
 import { UserModule } from '@/store/modules/user'
 import { isValidUsername } from '@/utils/validate'
+import LangSelect from '@/components/LangSelect/index.vue'
 
 @Component({
   name: 'Login'
@@ -259,6 +261,10 @@ export default class extends Vue {
       margin: 0px auto 40px auto;
       text-align: center;
       font-weight: bold;
+    }
+
+    .set-language {
+        
     }
   }
 
